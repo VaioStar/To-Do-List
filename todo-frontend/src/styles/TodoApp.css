@@ -1,0 +1,163 @@
+/* Styl ogólny dla aplikacji */
+.app-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+
+/* Nagłówek */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Formularz dodawania nowych zadań */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    text-align: center;
+    color: #333;
+}
+
+input[type="text"], input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="date"]:disabled {
+    background-color: #f5f5f5;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+/* Styl dla przycisków z różnymi stanami */
+.completed-btn {
+    background-color: #28a745;
+}
+
+.not-completed-btn {
+    background-color: #ffc107;
+}
+
+/* Tabela */
+.todo-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.todo-table th, .todo-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.todo-table th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.todo-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.todo-table tr.completed {
+    background-color: #e0ffe0;
+    text-decoration: line-through;
+}
+
+.todo-table input[type="text"], .todo-table input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Stylizacja przycisków w tabeli */
+.todo-table button {
+    padding: 6px 12px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 3px;
+    transition: background-color 0.3s;
+}
+
+.todo-table button:hover {
+    background-color: #0056b3;
+}
+
+.todo-table button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+/* Styl dla przycisków akcji w tabeli */
+.todo-table button.completed-btn {
+    background-color: #28a745;
+}
+
+.todo-table button.not-completed-btn {
+    background-color: #ffc107;
+}
+
+/* Stylizacja ukrywania ukończonych zadań */
+button {
+    margin: 10px 0;
+    width: 100%;
+    background-color: #007bff;
+    font-size: 16px;
+}
+
+/* Styl dla edytowania zadań */
+input[type="text"]:focus, input[type="date"]:focus {
+    border-color: #007bff;
+}
+
+button.save-btn {
+    background-color: #28a745;
+}
+
+button.cancel-btn {
+    background-color: #dc3545;
+}
